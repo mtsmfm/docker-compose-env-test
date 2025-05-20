@@ -1,0 +1,10 @@
+services:
+  test:
+    image: busybox
+    ports:
+      - "80:80"
+    command:
+      - /bin/sh
+      - -c
+      - |
+        echo "FOO: $FOO"
